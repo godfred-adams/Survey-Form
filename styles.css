@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+/* body and background */
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url("./pictures/pexels-luis-gomes-546819.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #f5f6f7;
+  font-size: 16px;
+}
+
+/* title and description */
+#title {
+  margin-top: 3rem;
+  text-align: center;
+}
+#description {
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+/*form */
+form {
+  background: rgba(27, 27, 50, 0.8);
+  width: 65%;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+fieldset {
+  border: none;
+}
+label {
+  display: block;
+  margin: 2rem 0;
+  font-size: 1xem;
+}
+/* option text */
+#option {
+  color: #e4e4e4;
+  font-size: 0.9rem;
+}
+input,
+textarea,
+select {
+  width: 100%;
+  margin: 10px 0 0 0;
+  min-height: 2.3em;
+  margin: 0.5rem auto 0 auto;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+input,
+textarea {
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+}
+textarea {
+  resize: none;
+}
+/* inline class for the various checkboxes and radio buttons */
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+/* button */
+input[type="submit"] {
+  background: #37af65;
+  border: none;
+  display: block;
+  cursor: pointer;
+  height: 3em;
+  color: #e4e4e4;
+}
+/* media screens */
+@media (max-width: 162px) {
+  * {
+    font-size: 0.9rem;
+  }
+  #description {
+    font-size: 0.4xrem;
+  }
+  form {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  form {
+    width: 100%;
+  }
+}
+
